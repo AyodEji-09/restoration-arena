@@ -11,6 +11,8 @@ import Events from "./pages/Events";
 import Error404 from "./pages/Error404";
 import Nav from "./components/nav/Nav";
 import Footer from "./components/footer/Footer";
+import Sermon from "./pages/Sermon";
+import PastEvent from "./pages/PastEvent";
 
 function App() {
   return (
@@ -23,8 +25,10 @@ function App() {
         <Route path="/get-involved" element={<GetInvolved />} />
         <Route path="/pastors-corner" element={<PastorsCorner />} />
         <Route path="/sermons" element={<Sermons />} />
+        <Route path="/sermons/:id" element={<Sermon />} />
         <Route path="/giving" element={<Giving />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/events/past-event/:id" element={<PastEvent />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />

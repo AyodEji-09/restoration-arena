@@ -6,10 +6,9 @@ const Nav = () => {
     { id: 1, name: "Home", url: "/" },
     { id: 2, name: "About", url: "/about-us" },
     { id: 3, name: "Get Involved", url: "/get-involved" },
-    { id: 4, name: "Pastor's Corner", url: "/pastors-corner" },
+    // { id: 4, name: "Pastor's Corner", url: "/pastors-corner" },
     { id: 5, name: "Sermons", url: "/sermons" },
     { id: 6, name: "Events", url: "/events" },
-    { id: 7, name: "Give", url: "/giving" },
   ];
   const location = useLocation();
   const [isActive, setIsActive] = useState(false);
@@ -17,7 +16,7 @@ const Nav = () => {
     setIsActive(!isActive);
   };
   return (
-    <header className="flex top-0">
+    <header className="flex top-0 shadow">
       <Link to="/">
         <img
           src="/icons/logo@2x 1.png"
