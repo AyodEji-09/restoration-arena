@@ -5,9 +5,11 @@ import ServiceCard from "../components/service-card/ServiceCard";
 
 const Home = () => {
   const images = [
-    "/images/P10445681.png",
-    "/images/p233.png",
-    "/images/bgg.png",
+    "/images/worship.jpg",
+    "/images/hero-1.jpg",
+    "/images/hero-2.jpg",
+    "/images/hero-3.jpg",
+    "/images/hero-4.jpg",
   ]; // Add your image paths
 
   const [index, setIndex] = useState(0);
@@ -20,34 +22,33 @@ const Home = () => {
   }, [images.length]);
   return (
     <main>
-      <section
-        className="relative w-full h-screen overflow-hidden"
-        id="backgroundDiv"
-      >
+      <section className="relative w-full overflow-hidden" id="backgroundDiv">
+        <div className="absolute inset-0 bg-black/35 z-10"></div>
         {images.map((img, i) => (
           <div
             key={i}
-            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
+            className={`absolute inset-0 bg-cover bg-top transition-opacity duration-1000 ${
               i === index ? "opacity-100" : "opacity-0"
             }`}
             style={{ backgroundImage: `url(${img})` }}
           />
         ))}
-        <div className="image-container relative z-10 h-full">
-          <h2>Welcome to Our Church</h2>
-          <h1 className="wh uppercase">
-            Building A <br />
-            Family of God
-          </h1>
+        <div className="image-container relative z-10 space-y-4">
+          <h2 className="text-xl font-semibold">Welcome to Our Church</h2>
+          <article>
+            <h1 className="font-bold text-5xl lg:text-6xl uppercase">
+              Building A <br />
+              Family of God
+            </h1>
+            <p className="text-xl">
+              worship with us at RCCG Restoration Arena
+              <br />
+              Parish, Stamford.
+            </p>
+          </article>
           <a href="./pages/about.html">
-            <button>LEARN MORE</button>
+            <button className="mt-8">LEARN MORE</button>
           </a>
-
-          <p>
-            worship with us at RCCG Restoration Arena
-            <br />
-            Parish, Stamford.
-          </p>
         </div>
       </section>
       <section className="sec-two">
@@ -62,15 +63,36 @@ const Home = () => {
           problems are solved.
         </h2>
 
-        <div className="pic-cont">
-          <img src="/images/image 24 (1).png" alt="Image 1" loading="lazy" />
-          <img src="/images/co1@2x 1.png " alt="Image 1" loading="lazy" />
-          <img src="/images/Mask group (1).png " alt="Image 1" loading="lazy" />
+        <div className="pic-cont min-w-2xs overflow-hidden">
+          <div className="h-[350px] rounded-xl overflow-hidden min-w-[250px] !w-[250px]">
+            <img
+              src="/images/pastor-2.jpg"
+              alt="Image 1"
+              loading="lazy"
+              className="w-full h-full object-cover object-top"
+            />
+          </div>
+          <div className="h-[400px] rounded-xl overflow-hidden min-w-2xs !w-[300px]">
+            <img
+              src="/images/pastor.jpg"
+              className="w-full h-full object-cover object-top"
+              alt="Image 1"
+              loading="lazy"
+            />
+          </div>
+          <div className="h-[350px] rounded-xl overflow-hidden min-w-[250px] w-[250px]">
+            <img
+              src="/images/sermon.png "
+              className="w-full h-full object-cover object-top"
+              alt="Image 1"
+              loading="lazy"
+            />
+          </div>
         </div>
 
         <h3>FROM OUR PASTOR</h3>
 
-        <div className="frame">
+        <div className="frame px-4">
           <img src="/icons/image 25.png" alt="img-church-icon" />
           <div>
             <p>
@@ -160,9 +182,9 @@ const Home = () => {
           />
         </div>
 
-        <div className="ro-img-text mx-auto">
-          <div className="address-cont">
-            <h1>Reach Out and Connect.</h1>
+        <div className="container px-4 grid md:grid-cols-3 mx-auto gap-8 mt-16">
+          <div className="address-cont self-center">
+            <h1 className="text-2xl font-bold">Reach Out and Connect.</h1>
             <div>
               <div className="ad">
                 <img
@@ -170,7 +192,7 @@ const Home = () => {
                   alt="location icon"
                 />
                 <div className="ddrr w-full">
-                  <h3 className="rr">Address</h3>
+                  <h3 className="rr font-semibold">Address</h3>
                   <p className="rr">
                     1069 East Main Street <br />
                     Stamford, CT 06902
@@ -180,24 +202,26 @@ const Home = () => {
               <div className="ad">
                 <img src="/icons/mdi-light_phone.png" alt="location icon" />
                 <div className="ddrr w-full">
-                  <h3 className="rr">Contact</h3>
+                  <h3 className="rr font-semibold">Contact</h3>
                   <p className="rr">(917) 476-9552</p>
                 </div>
               </div>
               <div className="ad">
                 <img src="/icons/mdi-light_email.png" alt="location icon" />
                 <div className="ddrr w-full">
-                  <h3 className="rr">Email</h3>
+                  <h3 className="rr font-semibold">Email</h3>
                   <p className="rr">rccgrestorationarenastamford@gmail.com</p>
                 </div>
               </div>
             </div>
           </div>
-          <img
-            className="lk"
-            src="/images/image 2.png"
-            alt="img-church-white-background"
-          />
+          <div className="md:col-span-2 rounded-2xl overflow-hidden">
+            <img
+              className="w-full h-full"
+              src="/images/worship.jpg"
+              alt="img-church-white-background"
+            />
+          </div>
         </div>
       </section>
     </main>

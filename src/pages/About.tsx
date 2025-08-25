@@ -160,7 +160,7 @@ const About = () => {
       </section>
       <section className="container mx-auto px-4">
         <h1 className="lead-h">Ministers</h1>
-        <div id="led-cont">
+        <div className="container mx-auto px-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 my-8">
           {leadership.map(leader => (
             <TeamCard key={leader.id} item={leader} />
           ))}

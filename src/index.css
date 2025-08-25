@@ -159,9 +159,9 @@ nav.open {
 
 
 main {
-    max-width: 1600px;
     width: 100%;
     padding-top: 70px;
+    margin: auto;
 
 }
 
@@ -170,19 +170,12 @@ main {
 .image-container {
     background-size: cover;
     background-position: center;
-    height: 665px;
-    width: 100%;
-    max-width: 1560px;
+    /* width: 100%;
+    max-width: 1560px; */
     padding: 128px 110px;
     color: var(--secondary-color);
 
 
-}
-
-
-
-.image-container h2 {
-    font-size: 16px;
 }
 
 .wh {
@@ -192,26 +185,13 @@ main {
     padding-top: 16px;
 }
 
-.image-container p {
-    font-size: 16px;
-    font-weight: 400;
-
-    margin: 0;
-    padding-top: 52px;
-
-}
-
-
-
 .image-container button {
     background: var(--tertiary-color);
     color: var(--secondary-color);
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
     border-radius: 12px;
-    margin-top: 62px;
     padding: 20px 47px;
 }
 
@@ -257,8 +237,6 @@ main {
     align-items: center;
     gap: 20px;
     margin: 65px auto;
-    width: 60%;
-
 }
 
 .sec-two h3 {
@@ -990,7 +968,6 @@ form button:hover {
 
 .bl-box {
     background-color: var(--secondary-color);
-    height: 400px;
     width: 100%;
     /* max-width: 567px; */
 
@@ -1062,21 +1039,6 @@ form button:hover {
     padding: 15px 0 15px 0;
     line-height: 24px;
     opacity: 0.78;
-}
-
-#led-cont {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 16px;
-    /* spacing between boxes */
-    justify-content: center;
-    padding: 80px 126px 80px 126px;
-}
-
-.lead {
-    margin-bottom: 50px;
 }
 
 .lead-title {
@@ -1215,12 +1177,7 @@ form button:hover {
     }
 
     .pic-cont {
-
         padding: 0 10px;
-    }
-
-    .pic-cont img {
-        width: 50%;
     }
 
     .ro-img-text {
@@ -1389,21 +1346,6 @@ form button:hover {
     .media-grid img:hover {
         transform: scale(1.03);
     }
-
-    #led-cont {
-        width: 100%;
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 16px;
-        /* spacing between boxes */
-        justify-content: center;
-        padding: 80px 18px 80px 18px;
-    }
-
-
-
-
 }
 
 
@@ -1677,7 +1619,7 @@ form button:hover {
         max-width: 1600px;
         width: 100%;
         padding-top: 70px;
-
+        margin: auto;
     }
 
 
@@ -1685,19 +1627,12 @@ form button:hover {
     .image-container {
         background-size: cover;
         background-position: center;
-        height: 665px;
-        width: 100%;
-        max-width: 1560px;
+        /* width: 100%; */
+        /* max-width: 1560px; */
         padding: 128px 110px;
         color: var(--secondary-color);
 
 
-    }
-
-
-
-    .image-container h2 {
-        font-size: 16px;
     }
 
     .wh {
@@ -1707,17 +1642,6 @@ form button:hover {
         padding-top: 16px;
     }
 
-    .image-container p {
-        font-size: 16px;
-        font-weight: 400;
-
-        margin: 0;
-        padding-top: 52px;
-
-    }
-
-
-
     .image-container button {
         background: var(--tertiary-color);
         color: var(--secondary-color);
@@ -1726,7 +1650,6 @@ form button:hover {
         cursor: pointer;
         font-size: 16px;
         border-radius: 12px;
-        margin-top: 62px;
         padding: 20px 47px;
     }
 
@@ -1771,8 +1694,6 @@ form button:hover {
         align-items: center;
         gap: 20px;
         margin: 65px auto;
-        width: 60%;
-
     }
 
     .sec-two h3 {
@@ -2573,21 +2494,6 @@ form button:hover {
         opacity: 0.78;
     }
 
-    #led-cont {
-        width: 100%;
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 16px;
-        /* spacing between boxes */
-        justify-content: center;
-        padding: 80px 126px 80px 126px;
-    }
-
-    .lead {
-        margin-bottom: 50px;
-    }
-
     .lead-title {
         font-size: 24px;
         font-weight: 600;
@@ -2724,12 +2630,7 @@ form button:hover {
         }
 
         .pic-cont {
-
             padding: 0 10px;
-        }
-
-        .pic-cont img {
-            width: 50%;
         }
 
         .ro-img-text {
@@ -2890,30 +2791,12 @@ form button:hover {
         .media-grid img:hover {
             transform: scale(1.03);
         }
-
-        #led-cont {
-            width: 100%;
-            height: auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 16px;
-            /* spacing between boxes */
-            justify-content: center;
-            padding: 80px 18px 80px 18px;
-        }
-
-
-
-
     }
-
 
     @media(max-width: 670px) {
         .bl-p {
-
             padding: 5px 5px 0 5px;
             width: 95%;
-
         }
     }
 
@@ -2973,11 +2856,6 @@ form button:hover {
             grid-template-columns: 1fr;
             padding-left: 20px;
             padding-right: 20px;
-        }
-
-        .bl-box {
-            /* height: auto; */
-            /* width: 100%; */
         }
 
         .ab-sec-one {

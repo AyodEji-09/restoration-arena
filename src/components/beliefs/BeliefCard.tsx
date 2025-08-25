@@ -8,7 +8,7 @@ const BeliefCard = ({
   content: string;
 }) => {
   return (
-    <div className="bl-box max-w-lg space-y-4">
+    <div className="bl-box max-w-g space-y-4">
       <img src={`/icons/${icon}`} alt="dove-icon" loading="lazy" className="!mr-auto" />
       <h2>{title}</h2>
       <p>{content}</p>
