@@ -25,7 +25,7 @@ function App() {
         <Route path="/get-involved" element={<GetInvolved />} />
         <Route path="/pastors-corner" element={<PastorsCorner />} />
         <Route path="/sermons" element={<Sermons />} />
-        <Route path="/sermons/:id" element={<Sermon />} />
+        <Route path="/sermons/:slug" element={<Sermon />} />
         <Route path="/giving" element={<Giving />} />
         <Route path="/events" element={<Events />} />
         <Route path="/events/past-event/:id" element={<PastEvent />} />
