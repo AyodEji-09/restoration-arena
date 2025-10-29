@@ -1,8 +1,8 @@
-import type { SanityImage, WelcomeSection } from "../../lib/types/home";
+import type { SanityImage, WelcomeSectionType } from "../../lib/types/home";
 import { SanityImageComp } from "../sanity-image/SanityImage";
 import { BlockContentComponent } from "../vlock-content/BlockContent";
 
-const WelcomeSection = ({ data }: { data: WelcomeSection }) => {
+const WelcomeSection = ({ data }: { data: WelcomeSectionType }) => {
 
   return (
     <section className="sec-two">

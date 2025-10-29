@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import type { WhoWeAreSection } from "../../lib/types/home";
 import { BlockContentComponent } from "../vlock-content/BlockContent";
+import type { WhoWeAreSectionType } from "../../lib/types/home";
 
-const WhoWeAreSection = ({ data }: { data: WhoWeAreSection }) => {
+const WhoWeAreSection = ({ data }: { data: WhoWeAreSectionType }) => {
   return (
     <section className="sec-three">
       <div className="sec-three-div-container">

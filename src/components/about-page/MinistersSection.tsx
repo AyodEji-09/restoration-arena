@@ -1,10 +1,10 @@
-import type { MinistersSection } from "../../lib/types/about";
+import type { MinistersSectionType } from "../../lib/types/about";
 import TeamCard from "../team-card/TeamCard";
 
 const MinistersSection = ({
   data,
 }: {
-  data: MinistersSection;
+  data: MinistersSectionType;
 }) => {
   console.log({ data });
   return (

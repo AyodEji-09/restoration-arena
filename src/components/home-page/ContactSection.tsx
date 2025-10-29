@@ -1,6 +1,6 @@
-import type { ContactSection } from "../../lib/types/home";
+import type { ContactSectionType } from "../../lib/types/home";
 
-const ContactSection = ({ data }: { data: ContactSection }) => {
+const ContactSection = ({ data }: { data: ContactSectionType }) => {
 
   return (
     <section className="mb-16">

@@ -37,7 +37,7 @@ export interface Minister {
     message?: BlockContent[];
 }
 
-export interface MinistersSection {
+export interface MinistersSectionType {
     _type: "ministersSection";
     title: string;
     ministers: Minister[];
@@ -49,6 +49,6 @@ export interface AboutPage {
         | MinimalHeroSection
         | AboutWhoWeAreSection
         | AboutValueSection
-        | MinistersSection
+        | MinistersSectionType
     )[];
 }

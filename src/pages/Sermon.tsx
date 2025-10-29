@@ -31,7 +31,7 @@ const Sermon = () => {
           <img
             src={data.coverImage?.asset.url}
             alt="message title"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
         </div>
         <div className="absolute inset-0 bg-linear-to-r from-black/80 to-black/15"></div>

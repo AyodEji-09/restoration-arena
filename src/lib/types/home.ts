@@ -36,17 +36,17 @@ export interface HomePage {
 
 // Union type of all possible section types
 export type HomePageSection =
-  | HeroSection
-  | WelcomeSection
-  | ValueSection
-  | WhoWeAreSection
-  | ProgramsSection
-  | ContactSection;
+  | HeroSectionType
+  | WelcomeSectionType
+  | ValueSectionType
+  | WhoWeAreSectionType
+  | ProgramsSectionType
+  | ContactSectionType;
 
 // ----------------------------------
 // HERO SECTION
 // ----------------------------------
-export interface HeroSection extends CTA {
+export interface HeroSectionType extends CTA {
   _key: string;
   _type: 'heroSection';
   heading?: string;
@@ -59,7 +59,7 @@ export interface HeroSection extends CTA {
 // ----------------------------------
 // WELCOME SECTION
 // ----------------------------------
-export interface WelcomeSection {
+export interface WelcomeSectionType {
   _key: string;
   _type: 'welcomeSection';
   title?: string;
@@ -73,7 +73,7 @@ export interface WelcomeSection {
 // ----------------------------------
 // VALUE SECTION
 // ----------------------------------
-export interface ValueSection {
+export interface ValueSectionType {
   _key: string;
   _type: 'valueSection';
   title?: string;
@@ -90,7 +90,7 @@ export interface ValueCard {
 // ----------------------------------
 // WHO WE ARE SECTION
 // ----------------------------------
-export interface WhoWeAreSection extends CTA {
+export interface WhoWeAreSectionType extends CTA {
   _key: string;
   _type: 'whoWeAreSection';
   title?: string;
@@ -103,7 +103,7 @@ export interface WhoWeAreSection extends CTA {
 // ----------------------------------
 // PROGRAMS SECTION
 // ----------------------------------
-export interface ProgramsSection {
+export interface ProgramsSectionType {
   _key: string;
   _type: 'programsSection';
   title?: string;
@@ -121,7 +121,7 @@ export interface ProgramCard {
 // ----------------------------------
 // CONTACT SECTION
 // ----------------------------------
-export interface ContactSection {
+export interface ContactSectionType {
   _key: string;
   _type: 'contactSection';
   heading?: string;

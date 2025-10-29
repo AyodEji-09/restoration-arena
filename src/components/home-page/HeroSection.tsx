@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import type { HeroSection } from "../../lib/types/home";
 import { urlFor } from "../../sanity/image";
+import type { HeroSectionType } from "../../lib/types/home";
 
-const HeroSection = ({ data }: { data: HeroSection }) => {
+const HeroSection = ({ data }: { data: HeroSectionType }) => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
