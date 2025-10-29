@@ -21,7 +21,7 @@ const Events = () => {
   }, []);
 
   const tabs: TabType[] = [
-    { id: 1, title: "upcoming Events", component: <UpcomingEvents /> },
+    { id: 1, title: "Upcoming Events", component: <UpcomingEvents /> },
     { id: 2, title: "Past Events", component: <PastEvents /> },
   ];
   return (
