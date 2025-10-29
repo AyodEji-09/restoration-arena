@@ -1,7 +1,7 @@
-import type { ValueSection } from "../../lib/types/home";
+import type { ValueSectionType } from "../../lib/types/home";
 import BeliefCard from "../beliefs/BeliefCard";
 
-const BeliefSection = ({ data }: { data: ValueSection }) => {
+const BeliefSection = ({ data }: { data: ValueSectionType }) => {
 
   return (
     <section className="container mx-auto mt-20 px-4">

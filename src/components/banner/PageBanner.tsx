@@ -1,12 +1,12 @@
-import type { HeroSection } from "../../lib/types/home";
 import { Link } from "react-router-dom";
 import type { MinimalHeroSection } from "../../lib/types/about";
+import type { HeroSectionType } from "../../lib/types/home";
 
 const PageBanner = ({
   data,
   color = "dark",
 }: {
-  data: HeroSection | MinimalHeroSection;
+  data: HeroSectionType | MinimalHeroSection;
   color?: "dark" | "light";
 }) => {
   return (

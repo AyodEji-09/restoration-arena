@@ -1,11 +1,11 @@
 import type { AboutWhoWeAreSection } from "../../lib/types/about";
-import type { WhoWeAreSection } from "../../lib/types/home";
+import type { WhoWeAreSectionType } from "../../lib/types/home";
 import { BlockContentComponent } from "../vlock-content/BlockContent";
 
 const WhoAreWeSection = ({
   data,
 }: {
-  data: WhoWeAreSection | AboutWhoWeAreSection;
+  data: WhoWeAreSectionType | AboutWhoWeAreSection;
 }) => {
   return (
     <section className="ab-sec-two mt-12">

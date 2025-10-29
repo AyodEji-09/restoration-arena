@@ -1,7 +1,7 @@
-import type { ProgramsSection } from "../../lib/types/home";
+import type { ProgramsSectionType } from "../../lib/types/home";
 import ServiceCard from "../service-card/ServiceCard";
 
-const ProgramSection = ({ data }: { data: ProgramsSection }) => {
+const ProgramSection = ({ data }: { data: ProgramsSectionType }) => {
   return (
     <section className="sec-four">
       <h2 className="tw">{data.title}</h2>

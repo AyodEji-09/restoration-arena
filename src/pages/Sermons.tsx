@@ -7,7 +7,7 @@ import {
   fetchSermons,
   fetchSermonsPage,
 } from "../lib/api/sermonsApi";
-import type { HeroSection } from "../lib/types/home";
+import type { HeroSectionType } from "../lib/types/home";
 
 const Sermons = () => {
   const [pageData, setPageData] = useState<SermonsPage | null>(null);
@@ -49,7 +49,7 @@ const Sermons = () => {
         <h1 className="text-4xl font-bold py-4">Sermons</h1>
       </div>
       {pageData && (
-        <PageBanner color="light" data={pageData.hero as HeroSection} />
+        <PageBanner color="light" data={pageData.hero as HeroSectionType} />
       )}
       <div className="container mx-auto px-4 py-12">
         <article className="text-center">

@@ -1,4 +1,4 @@
-import type { HeroSection, SanityImage } from "./home";
+import type { HeroSectionType, SanityImage } from "./home";
 
 export type EventItem = {
     _id: string;
@@ -13,7 +13,7 @@ export type EventItem = {
 export type EventsPageData = {
     title: string;
     introText?: string;
-    hero: HeroSection;
+    hero: HeroSectionType;
     featuredEvent?: EventItem;
     tabConfig?: {
         upcomingLabel?: string;
