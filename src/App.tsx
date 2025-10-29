@@ -13,6 +13,9 @@ import Nav from "./components/nav/Nav";
 import Footer from "./components/footer/Footer";
 import Sermon from "./pages/Sermon";
 import PastEvent from "./pages/PastEvent";
+import InviteSomeone from "./pages/InviteSomeone";
+import JoinTeam from "./pages/JoinTeam";
+import JoinFellowshipCenter from "./pages/JoinFellowshipCenter";
 
 function App() {
   return (
@@ -23,6 +26,15 @@ function App() {
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/get-involved" element={<GetInvolved />} />
+        <Route
+          path="/get-involved/invite-someone"
+          element={<InviteSomeone />}
+        />
+        <Route path="/get-involved/join-team" element={<JoinTeam />} />
+        <Route
+          path="/get-involved/join-fellowship-center"
+          element={<JoinFellowshipCenter />}
+        />
         <Route path="/pastors-corner" element={<PastorsCorner />} />
         <Route path="/sermons" element={<Sermons />} />
         <Route path="/sermons/:slug" element={<Sermon />} />

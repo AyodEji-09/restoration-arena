@@ -1,14 +1,13 @@
 import { useNavigate } from "react-router-dom";
 
-const GetInvolvedCard = ({
-  title,
-  btnText,
-  url,
-}: {
+type Props = {
   title: string;
   btnText: string;
   url: string;
-}) => {
+  image?: string;
+};
+
+const GetInvolvedCard = ({ title, btnText, url, image }: Props) => {
   const navigate = useNavigate();
   const goTo = () => {
     navigate(url);
@@ -17,8 +16,8 @@ const GetInvolvedCard = ({
     <div className="h-[400px] p-4 rounded-4xl bg-black relative text-white w-full overflow-hidden shadow-md">
       <div className="absolute inset-0 overflow-hidden">
         <img
-          src="/images/image 13.png"
-          alt=""
+          src={image || "/images/image 13.png"}
+          alt={title}
           className="object-cover w-full h-full"
         />
       </div>
