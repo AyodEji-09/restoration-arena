@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer id="footer">
@@ -19,31 +21,25 @@ const Footer = () => {
         <div className="links order-3 lg:order-2">
           <p>Quick links</p>
           <p>
-            <a href="../pages/about.html">About</a>
+            <Link to="/about-us">About</Link>
           </p>
           <p>
-            <a href="../pages/contact.html">Contact</a>
+            <Link to="/contact-us">Contact</Link>
           </p>
           <p>
-            <a href="../pages/media.html">Media</a>
+            <Link to="/get-involved">Get Involved</Link>
           </p>
         </div>
         <div className="socials order-2 lg:order-3">
           <p>Connect</p>
           <div>
-            <a
-              href="#"
-              target="_blank"
-            >
+            <a href="#" target="_blank">
               <img src="/icons/Group.png" alt="ig-icon" />
             </a>
             <a href="#">
               <img src="/icons/fontisto_facebook.png" alt="fb-icon" />
             </a>
-            <a
-              href="#"
-              target="_blank"
-            >
+            <a href="#" target="_blank">
               <img src="/icons/logos_youtube-icon.png" alt="yt-icon" />
             </a>
           </div>
@@ -71,8 +67,8 @@ const Footer = () => {
       </div>
       <hr className="mx-auto" />
       <p className="copy">
-        © <span className="year"></span> RCCG Restoration Arena Calgary. All rights
-        reserved.
+        © <span className="year"></span> RCCG Restoration Arena Calgary. All
+        rights reserved.
       </p>
     </footer>
   );
