@@ -32,16 +32,16 @@ const Footer = () => {
           <p>Connect</p>
           <div>
             <a
-              href="https://www.instagram.com/rccgcityofdavidcalgary_?igsh=MzN3ODVkcjJmMmJw"
+              href="#"
               target="_blank"
             >
               <img src="/icons/Group.png" alt="ig-icon" />
             </a>
-            <a href="https://www.https://www.facebook.com/RCCGCOD2015/">
+            <a href="#">
               <img src="/icons/fontisto_facebook.png" alt="fb-icon" />
             </a>
             <a
-              href="https://www.youtube.com/@rccgcityofdavidcalgarycana1981"
+              href="#"
               target="_blank"
             >
               <img src="/icons/logos_youtube-icon.png" alt="yt-icon" />
