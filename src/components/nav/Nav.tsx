@@ -44,7 +44,7 @@ const Nav = () => {
       {/* for the button and hamburger menu */}
       <div className="bb">
         <a
-          href="https://give.tithe.ly/?formId=c250ec60-6865-11ee-90fc-1260ab546d11&kiosk=true"
+          href="https://simplecheckout.authorize.net/payment/CatalogPayment.aspx"
           target="_blank"
         >
           <button className="give-button">Give Online</button>
