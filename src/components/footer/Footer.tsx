@@ -71,7 +71,7 @@ const Footer = () => {
       </div>
       <hr className="mx-auto" />
       <p className="copy">
-        © <span className="year"></span> RCCG City of David, Calgary. All rights
+        © <span className="year"></span> RCCG Restoration Arena Calgary. All rights
         reserved.
       </p>
     </footer>
