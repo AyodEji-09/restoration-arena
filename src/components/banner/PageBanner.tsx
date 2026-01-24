@@ -11,7 +11,7 @@ const PageBanner = ({
 }) => {
   return (
     <div
-      className={`banner py-32 relative ${
+      className={`banner py-40 relative ${
         color === "dark" ? "text-white" : "text-black"
       }`}
     >
