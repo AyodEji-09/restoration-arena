@@ -21,7 +21,7 @@ const bannerData: MinimalHeroSection = {
 const Giving = () => {
   return (
     <div>
-      <PageBanner data={bannerData} color="dark" />
+      <PageBanner data={bannerData} color="light" />
 
       <div className="container py-16">
         <form
