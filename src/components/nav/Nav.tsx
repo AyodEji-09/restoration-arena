@@ -43,12 +43,14 @@ const Nav = () => {
       </nav>
       {/* for the button and hamburger menu */}
       <div className="bb">
-        <a
+        {/* <a
           href="https://simplecheckout.authorize.net/payment/CatalogPayment.aspx"
           target="_blank"
-        >
+        > */}
+        <Link to={'/giving'}>
           <button className="give-button">Give Online</button>
-        </a>
+        </Link>
+        {/* </a> */}
 
         {/* Hamburger Menu  */}
         <div
