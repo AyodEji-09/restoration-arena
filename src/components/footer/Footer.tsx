@@ -48,19 +48,18 @@ const Footer = () => {
           <p>
             Phone
             <br />
-            <span>1-403-401-5671</span>
+            <span>917 476 9552</span>
           </p>
           <p>
             Email
             <br />
-            <span>info@rccgcityofdavidcalgary.com</span>
+            <span>rccgrestorationarenastamford@gmail.com</span>
           </p>
           <p>
             Address
             <br />{" "}
             <span>
-              Greenview Community Association 5600
-              <br /> Centre Street North, Calgary, AB T2K 0T3
+            1069 East Main Street Stamford CT
             </span>
           </p>
         </div>
