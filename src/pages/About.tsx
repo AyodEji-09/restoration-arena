@@ -24,7 +24,7 @@ const About = () => {
         <h1>KNOW MORE ABOUT US</h1>
       </section> */}
       {data.sections[0]._type === "heroSection" && (
-        <PageBanner data={data.sections[0]} />
+        <PageBanner data={data.sections[0]} color="light" />
       )}
       {data.sections[1]._type === "whoWeAreSection" && (
         <WhoAreWeSection data={data.sections[1]} />

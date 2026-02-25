@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { urlFor } from "../../sanity/image";
 import type { HeroSectionType } from "../../lib/types/home";
+import { Link } from "react-router-dom";
 
 const HeroSection = ({ data }: { data: HeroSectionType }) => {
   const [index, setIndex] = useState(0);
@@ -10,7 +11,7 @@ const HeroSection = ({ data }: { data: HeroSectionType }) => {
       setIndex((prev: number) =>
         data?.images && data.images.length > 0
           ? (prev + 1) % data.images.length
-          : 0
+          : 0,
       );
     }, 6000);
     return () => clearInterval(interval);
@@ -51,9 +52,9 @@ const HeroSection = ({ data }: { data: HeroSectionType }) => {
             Parish, Stamford.
           </p>
         </article>
-        <a href="./pages/about.html">
+        <Link to="/about-us">
           <button className="mt-8">LEARN MORE</button>
-        </a>
+        </Link>
       </div>
     </section>
   );
