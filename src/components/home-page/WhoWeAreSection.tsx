@@ -9,7 +9,7 @@ const WhoWeAreSection = ({ data }: { data: WhoWeAreSectionType }) => {
         <p>{data.title}</p>
         <h2>{data.heading}</h2>
         <BlockContentComponent value={data.message} />
-        <Link to={`${data.link}`}>
+        <Link to={`${data.cta.link}`}>
           <button>{data.cta.label}</button>
         </Link>
       </div>

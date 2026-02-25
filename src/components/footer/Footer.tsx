@@ -14,9 +14,9 @@ const Footer = () => {
             We lead people to encounter God, embrace others and elevate their
             world.
           </p>
-          <a href="../pages/about.html">
+          <Link to="/about-us">
             <button>READ MORE</button>
-          </a>
+          </Link>
         </div>
         <div className="links order-3 lg:order-2">
           <p>Quick links</p>
@@ -33,14 +33,23 @@ const Footer = () => {
         <div className="socials order-2 lg:order-3">
           <p>Connect</p>
           <div>
-            <a href="#" target="_blank">
+            <a
+              href="https://www.instagram.com/rccgrestorationarenastamford?igsh=MWY2MDY3bTVpM2Zrag=="
+              target="_blank"
+            >
               <img src="/icons/Group.png" alt="ig-icon" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.facebook.com/RCCGRestorationArenaStamford?mibextid=ZbWKwL"
+              target="_blank"
+            >
               <img src="/icons/fontisto_facebook.png" alt="fb-icon" />
             </a>
-            <a href="#" target="_blank">
-              <img src="/icons/logos_youtube-icon.png" alt="yt-icon" />
+            <a
+              href="https://x.com/rccgras?t=4_xS3_u-R9q3tv0KpuVsZw&s=09"
+              target="_blank"
+            >
+              <img src="/icons/x.svg" alt="x-icon" className="bg-white" />
             </a>
           </div>
         </div>
@@ -57,16 +66,13 @@ const Footer = () => {
           </p>
           <p>
             Address
-            <br />{" "}
-            <span>
-            1069 East Main Street Stamford CT
-            </span>
+            <br /> <span>1069 East Main Street Stamford CT</span>
           </p>
         </div>
       </div>
       <hr className="mx-auto" />
       <p className="copy">
-        © <span className="year"></span> RCCG Restoration Arena Calgary. All
+        © <span className="year"></span> RCCG Restoration Arena Stamford. All
         rights reserved.
       </p>
     </footer>
