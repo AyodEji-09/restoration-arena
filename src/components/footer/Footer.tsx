@@ -51,6 +51,12 @@ const Footer = () => {
             >
               <img src="/icons/x.svg" alt="x-icon" className="bg-white" />
             </a>
+            <a
+              href="https://youtube.com/@rccgrestorationarenastamfo1143?si=pfdQq-l_XhJ5Wyja"
+              target="_blank"
+            >
+              <img src="/icons/logos_youtube-icon.png" alt="x-icon" />
+            </a>
           </div>
         </div>
         <div className="contact order-4">
