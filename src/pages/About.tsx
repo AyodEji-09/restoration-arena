@@ -18,7 +18,7 @@ const About = () => {
 
   if (!data) return <p>Loading...</p>;
   return (
-    <main>
+    <main className="pb-12">
       {/* <section className="ab-sec-one">
         <h2>WELCOME TO RCCG RESTORATION ARENA, STAMFORD</h2>
         <h1>KNOW MORE ABOUT US</h1>
