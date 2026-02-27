@@ -5,11 +5,13 @@ const Footer = () => {
     <footer id="footer">
       <div className="container mx-auto px-4 grid grid-col-2 md:grid-cols-3 lg:grid-cols-4  gap-8 py-12">
         <div className="log-btn md:col-span-3 lg:col-span-1">
-          <img
-            src="/icons/logo@2x 1.png"
-            alt="RCCG Restoration Arena Logo"
-            className="h-12 !mr-auto"
-          />
+          <Link to="/">
+            <img
+              src="/images/logo-restoration.jpg"
+              alt="RCCG Restoration Arena Logo"
+              className="logo h-12"
+            />
+          </Link>
           <p>
             We lead people to encounter God, embrace others and elevate their
             world.

@@ -19,8 +19,8 @@ const Nav = () => {
     <header className="flex top-0 shadow">
       <Link to="/">
         <img
-          src="/icons/logo@2x 1.png"
-          alt="RCCG City of David Logo"
+          src="/images/logo-restoration.jpg"
+          alt="RCCG Restoration Arena Logo"
           className="logo h-12"
         />
       </Link>
@@ -47,7 +47,7 @@ const Nav = () => {
           href="https://simplecheckout.authorize.net/payment/CatalogPayment.aspx"
           target="_blank"
         > */}
-        <Link to={'/giving'}>
+        <Link to={"/giving"}>
           <button className="give-button">Give Online</button>
         </Link>
         {/* </a> */}
