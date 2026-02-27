@@ -9,7 +9,7 @@ const Footer = () => {
             <img
               src="/images/logo-restoration.jpg"
               alt="RCCG Restoration Arena Logo"
-              className="logo h-12"
+              className="logo h-14"
             />
           </Link>
           <p>
